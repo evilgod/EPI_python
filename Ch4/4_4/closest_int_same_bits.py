@@ -28,10 +28,10 @@ def small_test():
     assert closest_int_same_bit_count(7) == 11
     assert closest_int_same_bit_count(2) == 1
     assert closest_int_same_bit_count(32) == 16
-    assert closest_int_same_bit_count(2**64 - 2) == 2**64 - 3
+    assert closest_int_same_bit_count(2 ** 64 - 2) == 2 ** 64 - 3
 
     try:
-        closest_int_same_bit_count(2**64 - 1)
+        closest_int_same_bit_count(2 ** 64 - 1)
         assert False
     except ValueError as e:
         print(e)
